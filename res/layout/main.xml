@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/app_name"
+	    android:gravity="center_horizontal"
+	    android:padding="10sp"
+	    android:textSize="8pt"
+	    android:textColor="#00FF00" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="VPN IP"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edtip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="59.49.15.130" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="VPN Port"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edtport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="443" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Username"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edtuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="oa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Userpwd"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edtupwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:password="true"
+            android:text="123456" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/BTN_START"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start VPN" />
+
+    <Button
+        android:id="@+id/BTN_STOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop VPN" />
+
+    <Button
+        android:id="@+id/BTN_GETVPNSTATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get VPN Status" />
+</LinearLayout>
+
+</LinearLayout>
